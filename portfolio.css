@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+    background-color: rgba(0,0,0,0.7);
+}
+nav h1{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: peachpuff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+nav span{
+    font-size: 2rem;
+    color: crimson;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding: 10px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: rgb(9, 190, 250);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul li a:hover{
+    color: deeppink;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fd4766;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#home{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+#home img{
+    position: absolute;
+    width: 300px;
+    top: -150px;
+    height: 300px;
+    left: 70%;
+    margin-right: 20px;
+}
+#home h1{
+    font-size: 2rem;
+    position: relative;
+    top: 200px;
+    line-height: 50px;
+    left: 2rem;
+}
+#home p{
+    font-size: 3rem;
+    position: relative;
+    top: 200px;
+    line-height: 50px;
+    margin: 2rem;
+}
+.btn{
+    position: relative;
+    margin-top: 20px;
+    left: 40px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #fd4766;
+    border: 2px solid #fd4766;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #fd4768;
+    color: #fd4768;
+}
+#about{
+    background-color: darkcyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.heading{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 3rem;
+    color: #fd4766;
+    text-transform: uppercase;
+}
+#about img{
+    position: relative;
+    top: 250px;
+    left: 50px;
+    height: 300px;
+    width: 400px;
+}
+.about{
+    position: relative;
+    top: -100px;
+    left: 40%;
+    line-height: 50px;
+}
+.about h1{
+    font-size: 3rem;
+    color: white;
+}
+#about p{
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+#education{
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.education{
+    position: relative;
+    top: 50px;
+    left: 60px;
+}
+.education li{
+    font-size: 2.5rem;
+    padding: 1.8rem;
+    color: white;
+}
+.education p{
+    font-size: 1.6rem;
+    padding-left: 30px;
+    padding-top: 18px;
+    color: #456abd;
+}
+#skills{
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.skills{
+    display: flex;
+}
+.technical{
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    top: 200px;
+    left: 10%;
+    line-height: 40px;
+}
+.progress{
+    position: relative;
+    top: 200px;
+    left: 20%;
+    font-size: 1.8rem;
+    height: 2rem;
+    display: block;
+    line-height: 2.8rem;
+    text-align: right;
+    color: white;
+    padding: 20px;
+}
+#contact{
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form{
+    height: 50px;
+    width: 150px;
+    margin: 50px;
+    padding: 50px;
+}
+input,textarea{
+    height: 70px;
+    width: 700px;
+    padding: 30px;
+    margin: 30px;
+    font-size: 2rem;
+    background-color: transparent;
+    border: 2px solid black;
+    outline: none;
+}
+input::placeholder,textarea::placeholder{
+    color: white;
+}
+textarea{
+    height: 150px;
+}
